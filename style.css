@@ -591,6 +591,19 @@ textarea.contact-form-text {
     background: #F3E500
 }
 
+.join-us p {
+    align-items: center;
+    text-align: center;
+    background-color: #00c6d7;
+    background-image: linear-gradient(to right, rgba(212,252,255,1) 0%, rgba(106,225,235,1) 25%, rgba(0,198,215,1) 50%, rgba(0,159,172,1) 75%, rgba(0,119,129,1) 100%);
+    background-size: 100%;
+    font-size: 1rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 
 /* Events CSS */
 .events {
