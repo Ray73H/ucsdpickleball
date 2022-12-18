@@ -1,40 +1,25 @@
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
-const navLogo = document.querySelector("#navbar__logo");
+const buttons = document.querySelectorAll("[data-carousel-button]");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const offset = button.dataset.carouselButton === "next" ? 1 : -1
+      const slides = button
+        .closest("[data-carousel]")
+        .querySelector("[data-slides]")
+  
+      const activeSlide = slides.querySelector("[data-active]")
+      let newIndex = [...slides.children].indexOf(activeSlide) + offset
+      if (newIndex < 0) newIndex = slides.children.length - 1
+      if (newIndex >= slides.children.length) newIndex = 0
+  
+      slides.children[newIndex].dataset.active = true
+      delete activeSlide.dataset.active
+    })
+  })
 
 menu.addEventListener("click", function () {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
 });
-
-// show active menu when scrolling
-const highlightMenu = () => {
-  const elem = document.querySelector(".highlight");
-  const homeMenu = document.querySelector("#home-page");
-  const scheduleMenu = document.querySelector("#schedule-page");
-  const instagramMenu = document.querySelector("#instagram-page");
-  let scrollPos = window.scrollY;
-
-  // adds highlight class to my menu items
-  if (window.innerWidth > 960 && scrollPos < 600) {
-    homeMenu.classList.add("highlight");
-    scheduleMenu.classList.remove("highlight");
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 1400) {
-    homeMenu.classList.remove("highlight");
-    scheduleMenu.classList.add("highlight");
-    instagramMenu.classList.remove("highlight");
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 2345) {
-    scheduleMenu.classList.remove("highlight");
-    instagramMenu.classList.add("highlight");
-    return;
-  }
-
-  if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
-    elem.classList.remove("highlight");
-  }
-};
-
-window.addEventListener("scroll", highlightMenu);
-window.addEventListener("click", highlightMenu);
