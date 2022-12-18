@@ -662,6 +662,24 @@ textarea.contact-form-text {
     }
 }
 
+/* Footer CSS */
+.footer {
+    background: #182b49;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    align-items: center;
+  text-align: center;
+    color: #00c6d7;
+}
+
+.footer p:nth-child(2) {
+    padding-bottom: 20px;
+}
+
+
+
 /* Events CSS */
 .events {
   background: #182b49;
