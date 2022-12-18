@@ -656,6 +656,12 @@ textarea.contact-form-text {
   -moz-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 480px) {
+    .join-us h1 {
+        font-size: 2rem;
+    }
+}
+
 /* Events CSS */
 .events {
   background: #182b49;
@@ -685,8 +691,41 @@ textarea.contact-form-text {
   padding-top: 10rem;
 }
 
-@media screen and (max-width: 480px) {
-    .join-us h1 {
-        font-size: 2rem;
-    }
+/* Success CSS */
+.success {
+    background: #182b49;
+    height: 100vh;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.success__container h1 {
+    align-items: center;
+    text-align: center;
+    background-color: #00c6d7;
+    background-image: linear-gradient(
+      to right,
+      rgba(212, 252, 255, 1) 0%,
+      rgba(106, 225, 235, 1) 25%,
+      rgba(0, 198, 215, 1) 50%,
+      rgba(0, 159, 172, 1) 75%,
+      rgba(0, 119, 129, 1) 100%
+    );
+    background-size: 100%;
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-top: 10rem;
+  }
+
+.success__container p {
+    align-items: center;
+    text-align: center;
+    background-color: #00c6d7;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
