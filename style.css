@@ -10,16 +10,16 @@ html {
 }
 
 .border {
-    height: 1px;
-    background-color: #182b49;
+  height: 1px;
+  background-color: #182b49;
 }
 
 .bar {
-    margin-left: auto;
-    margin-right: auto;
-    height: 1px;
-    width: 5%;
-    background-color: #00c6d7;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  width: 5%;
+  background-color: #00c6d7;
 }
 
 .navbar {
@@ -503,6 +503,16 @@ html {
   margin-bottom: 2rem;
 }
 
+.schedule__child p {
+  background-color: #00c6d7;
+  background-size: 100%;
+  font-size: 1rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 #map {
   width: 80%;
   height: 80%;
@@ -558,9 +568,9 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-    .insta h1 {
-        font-size: 2rem;
-    }
+  .insta h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Join Us CSS */
@@ -657,28 +667,26 @@ textarea.contact-form-text {
 }
 
 @media screen and (max-width: 480px) {
-    .join-us h1 {
-        font-size: 2rem;
-    }
+  .join-us h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Footer CSS */
 .footer {
-    background: #182b49;
+  background: #182b49;
 }
 
 .footer p {
-    font-size: 0.8rem;
-    align-items: center;
+  font-size: 0.8rem;
+  align-items: center;
   text-align: center;
-    color: #00c6d7;
+  color: #00c6d7;
 }
 
 .footer p:nth-child(2) {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
-
-
 
 /* Events CSS */
 .events {
@@ -710,155 +718,153 @@ textarea.contact-form-text {
 }
 
 .events__container {
-    height: 70vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 3rem;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 3rem;
   padding-bottom: 3rem;
-
 }
 
 .events__info {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #00c6d7;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #00c6d7;
 }
 
 .events__info h2 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .events__info h3 {
-    font-style: italic;
-    padding-bottom: 2rem;
+  font-style: italic;
+  padding-bottom: 2rem;
 }
 
 .events__info p {
-    color: #f3e500;
-    font-size: 0.9rem;
+  color: #f3e500;
+  font-size: 0.9rem;
 }
 
 .carousel {
-    width: 100%;
-    height: 100%;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .carousel > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: 200ms opacity ease-in-out;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
 }
 
 .slide > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .slide[data-active] {
-    opacity: 1;
-    z-index: 1;
+  opacity: 1;
+  z-index: 1;
 }
 
 .carousel-button {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
-    cursor: pointer;
-    border-radius: .25rem;
-    padding: 0 .5rem;
-    padding-bottom: .5rem;
-    background-color: rgba(0, 0, 0, .1);
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .carousel-button:hover,
 .carousel-button:focus {
-    color: #fff;
-    background-color: rgba(0, 0, 0, .2);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .carousel-button.prev {
-    left: 1rem;
+  left: 1rem;
 }
 
 .carousel-button.next {
-    right: 1rem;
+  right: 1rem;
 }
 
 @media screen and (max-width: 480px) {
-    .events__container {
-        display: grid;
-        grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
-      }
-    
-    .events__info h2 {
-        font-size: 1.2rem;
-    }
-    
-    .events__info h3 {
-        font-style: italic;
-        padding-bottom: 0.8rem;
-        font-size: 0.8rem;
-    }
-    
-    .events__info p {
-        color: #f3e500;
-        font-size: 0.7rem;
-    }
-}
+  .events__container {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
 
+  .events__info h2 {
+    font-size: 1.2rem;
+  }
+
+  .events__info h3 {
+    font-style: italic;
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .events__info p {
+    color: #f3e500;
+    font-size: 0.7rem;
+  }
+}
 
 /* Success CSS */
 .success {
-    background: #182b49;
-    height: 100vh;
-    width: 100%;
-    padding: 0 50px;
+  background: #182b49;
+  height: 100vh;
+  width: 100%;
+  padding: 0 50px;
 }
 
 .success__container h1 {
-    align-items: center;
-    text-align: center;
-    background-color: #00c6d7;
-    background-image: linear-gradient(
-      to right,
-      rgba(212, 252, 255, 1) 0%,
-      rgba(106, 225, 235, 1) 25%,
-      rgba(0, 198, 215, 1) 50%,
-      rgba(0, 159, 172, 1) 75%,
-      rgba(0, 119, 129, 1) 100%
-    );
-    background-size: 100%;
-    font-size: 3rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    padding-top: 10rem;
-  }
+  align-items: center;
+  text-align: center;
+  background-color: #00c6d7;
+  background-image: linear-gradient(
+    to right,
+    rgba(212, 252, 255, 1) 0%,
+    rgba(106, 225, 235, 1) 25%,
+    rgba(0, 198, 215, 1) 50%,
+    rgba(0, 159, 172, 1) 75%,
+    rgba(0, 119, 129, 1) 100%
+  );
+  background-size: 100%;
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  padding-top: 10rem;
+}
 
 .success__container p {
-    align-items: center;
-    text-align: center;
-    background-color: #00c6d7;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  align-items: center;
+  text-align: center;
+  background-color: #00c6d7;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
