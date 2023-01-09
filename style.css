@@ -532,6 +532,10 @@ html {
   .schedule h2 {
     font-size: 1rem;
   }
+
+  .schedule p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Insta CSS */
