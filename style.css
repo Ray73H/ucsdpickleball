@@ -236,10 +236,9 @@ html {
 }
 
 .main__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   height: 100vh;
   background-color: #182b49;
@@ -249,7 +248,12 @@ html {
   padding: 0 50px;
 }
 
-.main__content h1 {
+.main__child {
+  flex: 1;
+  margin: auto;
+}
+
+.main h1 {
   font-size: 5rem;
   background-color: #00c6d7;
   background-image: linear-gradient(to top, #00c6d7 0%, #ffffff 100%);
@@ -271,7 +275,7 @@ html {
   -moz-text-fill-color: transparent;
 }
 
-.main__content p {
+.main p {
   margin-top: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
@@ -321,12 +325,13 @@ html {
 
 .main__img--container {
   text-align: center;
+  object-fit: contain;
 }
 
 #main__img {
-  border-radius: 20px;
   height: 70%;
   width: 70%;
+  border-radius: 20px;
 }
 
 .scroll-down {
@@ -378,38 +383,29 @@ html {
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .main__container {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
-    width: 100%;
-    margin: 0 auto;
+  .main {
     height: 90vh;
   }
 
-  .main__content {
+  .main__container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-bottom: 0;
+    height: 90vh;
   }
 
-  .main__content h1 {
+  .main h1 {
     font-size: 2.5rem;
     margin-top: 2rem;
   }
 
-  .main__content h2 {
+  .main h2 {
     font-size: 3rem;
   }
 
-  .main__content p {
+  .main p {
     margin-top: 1rem;
     font-size: 1.5rem;
-  }
-
-  #main__img {
-    height: 80%;
-    width: 80%;
   }
 
   .scroll-down {
