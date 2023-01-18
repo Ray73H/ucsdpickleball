@@ -509,6 +509,16 @@ html {
   -moz-text-fill-color: transparent;
 }
 
+p.emphasis {
+  background-color: #f3e500;
+  background-size: 100%;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 #map {
   width: 80%;
   height: 80%;
@@ -531,6 +541,10 @@ html {
 
   .schedule p {
     font-size: 0.8rem;
+  }
+
+  p.emphasis {
+    font-size: 1.2rem;
   }
 }
 
