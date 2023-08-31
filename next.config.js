@@ -12,7 +12,7 @@ module.exports = {
   },
   // ...
   pages: {
-    "/": "app/layout.jsx",
+    "/": "app/page.jsx",
   },
   // ...
 };
