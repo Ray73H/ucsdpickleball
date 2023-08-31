@@ -2,17 +2,6 @@
 const nextConfig = {};
 
 module.exports = {
-  // ...
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      "react-dom": "@hot-loader/react-dom",
-    };
-    return config;
-  },
-  // ...
-  pages: {
-    "/": "app/page.jsx",
-  },
-  // ...
+  basePath: "ucsdpickleball",
+  assetPrefix: "ucsdpickleball",
 };
